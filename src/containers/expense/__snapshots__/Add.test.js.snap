@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Add correctly 1`] = `
+<div
+  id="layout"
+>
+  <Header
+    title="Adicione uma despesa"
+  />
+  <main
+    className="content"
+  >
+    <Form
+      onSubmit={[Function]}
+    />
+  </main>
+</div>
+`;

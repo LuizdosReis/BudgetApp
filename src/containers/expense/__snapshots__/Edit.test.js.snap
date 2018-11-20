@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Edit correctly 1`] = `
+<div
+  id="layout"
+>
+  <Header
+    title="Altere há despesa"
+  />
+  <main
+    className="content"
+  >
+    <Form
+      expense={
+        Object {
+          "amount": 32.5,
+          "category": "Bank",
+          "createAt": 86400000,
+          "description": "Credit car",
+          "id": 3,
+        }
+      }
+      onSubmit={[Function]}
+    />
+    <button
+      onClick={[Function]}
+      type="submit"
+    >
+      Remover
+    </button>
+  </main>
+</div>
+`;

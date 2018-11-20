@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render List with empty message 1`] = `
+<div
+  id="layout"
+>
+  <div>
+    <Header
+      title="Despesas"
+    />
+    <main
+      className="content"
+    >
+      <div
+        className="main__header"
+      >
+        <Link
+          replace={false}
+          to="/expenses/new"
+        >
+          <button
+            className="pure-button pure-button-primary"
+            type="submit"
+          >
+            Add Despesas
+          </button>
+        </Link>
+        <Connect(Filter) />
+      </div>
+      <p>
+        Não há despesas
+      </p>
+    </main>
+  </div>
+</div>
+`;
+
+exports[`should render List with expenses 1`] = `
+<div
+  id="layout"
+>
+  <div>
+    <Header
+      title="Despesas"
+    />
+    <main
+      className="content"
+    >
+      <div
+        className="main__header"
+      >
+        <Link
+          replace={false}
+          to="/expenses/new"
+        >
+          <button
+            className="pure-button pure-button-primary"
+            type="submit"
+          >
+            Add Despesas
+          </button>
+        </Link>
+        <Connect(Filter) />
+      </div>
+      <div>
+        <table
+          className="pure-table table"
+        >
+          <thead>
+            <tr>
+              <th>
+                Descrição
+              </th>
+              <th>
+                Valor
+              </th>
+              <th>
+                Categoria
+              </th>
+              <th>
+                Data
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <Item
+              amount={32.5}
+              category="Life"
+              createAt={0}
+              description="Gum"
+              id={1}
+              key="1"
+            />
+            <Item
+              amount={32.5}
+              category="Home"
+              createAt={-86400000}
+              description="Rent"
+              id={2}
+              key="2"
+            />
+            <Item
+              amount={32.5}
+              category="Bank"
+              createAt={86400000}
+              description="Credit car"
+              id={3}
+              key="3"
+            />
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+`;

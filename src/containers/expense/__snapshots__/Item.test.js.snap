@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Item with expense 1`] = `
+<tr>
+  <td
+    className="table__element"
+  >
+    <Link
+      replace={false}
+      to="/expenses/edit/1"
+    >
+      Gum
+    </Link>
+  </td>
+  <td>
+    R$ 32.5
+  </td>
+  <td>
+    Life
+  </td>
+  <td>
+    01/01/1970
+  </td>
+</tr>
+`;
