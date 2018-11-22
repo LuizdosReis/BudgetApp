@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import moment from 'moment';
+import numeral from 'numeral';
 import { Link } from 'react-router-dom';
 
 const Item = ({
@@ -11,7 +12,7 @@ const Item = ({
     <td className="table__element">
       <Link to={`/expenses/edit/${id}`}>{description}</Link>
     </td>
-    <td>{`R$ ${amount}`}</td>
+    <td>{numeral(amount / 100).format('$0,0.00')}</td>
     <td>{category}</td>
     <td>{moment(createAt).format('DD/MM/YYYY')}</td>
   </tr>
