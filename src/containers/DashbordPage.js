@@ -1,10 +1,5 @@
 import React from 'react';
-import { Menu } from '../pages/Menu';
 
-const DashboardPage = () => (
-  <div className="content">
-    <Menu />
-  </div>
-);
+const DashboardPage = () => <div className="content" />;
 
 export default DashboardPage;

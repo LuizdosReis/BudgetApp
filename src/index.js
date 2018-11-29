@@ -8,10 +8,12 @@ import App from './App';
 import configureStore from './store/configureStore';
 
 import 'purecss/build/pure.css';
-import './styles/side-menu.css';
-import './styles/styles.css';
+// import './styles/styles.css';
 import 'react-dates/lib/css/_datepicker.css';
 import Reset from './styles/generic/Reset';
+import Base from './styles/Base';
+import Colors from './styles/settings/Colors';
+import Sizes from './styles/settings/Sizes';
 
 const store = configureStore();
 
@@ -40,6 +42,9 @@ ReactDOM.render(
   <Provider store={store}>
     <Fragment>
       <Reset />
+      <Base />
+      <Colors />
+      <Sizes />
       <App />
     </Fragment>
   </Provider>,
