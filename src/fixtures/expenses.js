@@ -1,4 +1,5 @@
 import moment from 'moment';
+import numeral from 'numeral';
 
 export default [
   {
@@ -6,7 +7,7 @@ export default [
     description: 'Gum',
     category: 'Life',
     createAt: 0,
-    amount: 32.5,
+    amount: 3250,
   },
   {
     id: 2,
@@ -15,7 +16,7 @@ export default [
     createAt: moment(0)
       .subtract(1, 'day')
       .valueOf(),
-    amount: 32.5,
+    amount: 3250,
   },
   {
     id: 3,
@@ -24,6 +25,6 @@ export default [
     createAt: moment(0)
       .add(1, 'day')
       .valueOf(),
-    amount: 32.5,
+    amount: 3250,
   },
 ];

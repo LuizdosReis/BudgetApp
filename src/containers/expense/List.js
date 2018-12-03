@@ -2,18 +2,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import getVisibleExpenses from '../../selectors/expenses';
-import Header from '../../pages/Header';
 import Item from './Item';
-import FilterExpenses from './Filter';
+import { Button } from './Styles';
 
 export const List = ({ expenses }) => (
   <main>
     <Link to="/expenses/new">
-      <button type="submit" className="pure-button pure-button-primary">
-        Add Despesas
-      </button>
+      <Button type="submit">Add Despesas</Button>
     </Link>
-    <FilterExpenses />
     {expenses.length === 0 ? (
       <p>Não há despesas</p>
     ) : (

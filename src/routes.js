@@ -7,7 +7,7 @@ import Menu from './components/Menu';
 import Header from './components/Header';
 import { Content, Layout } from './styles';
 import CategoryContainer from './containers/CategoryConteiner';
-import ExpensesList from './containers/expense/List';
+import DashboardPageExpenses from './containers/expense/DashboardPage';
 import AddExpense from './containers/expense/Add';
 import EditExpense from './containers/expense/Edit';
 import DashboardPage from './containers/DashbordPage';
@@ -45,7 +45,7 @@ const AppRoutes = () => (
           <Route path="/categories" component={CategoryContainer} exact />
           <Route path="/categories/new" component={CategoryForm} exact />
           <Route path="/categories/edit/:id?" component={CategoryForm} />
-          <Route path="/expenses" component={ExpensesList} exact />
+          <Route path="/expenses" component={DashboardPageExpenses} exact />
           <Route path="/expenses/new" component={AddExpense} exact />
           <Route path="/expenses/edit/:id?" component={EditExpense} />
           <Route component={NotFoundPage} />

@@ -13,7 +13,7 @@ exports[`should render Item with expense 1`] = `
     </Link>
   </td>
   <td>
-    $0.33
+    $32.50
   </td>
   <td>
     Life
