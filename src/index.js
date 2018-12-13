@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import 'react-dates/initialize';
 import numeral from 'numeral';
 import App from './App';
+import './firebase/firebase';
 
 import configureStore from './store/configureStore';
 

@@ -11,7 +11,7 @@ let wrapper;
 beforeEach(() => {
   addExpenseSpy = jest.fn();
   historySpy = { push: jest.fn() };
-  wrapper = shallow(<Add addExpense={addExpenseSpy} history={historySpy} />);
+  wrapper = shallow(<Add add={addExpenseSpy} history={historySpy} />);
 });
 
 test('should render Add correctly', () => {

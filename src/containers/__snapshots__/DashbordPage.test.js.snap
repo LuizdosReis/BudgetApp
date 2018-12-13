@@ -3,7 +3,5 @@
 exports[`should render DashbordPage correctly 1`] = `
 <div
   className="content"
->
-  <Component />
-</div>
+/>
 `;
