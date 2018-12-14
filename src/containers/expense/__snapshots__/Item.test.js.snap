@@ -7,16 +7,13 @@ exports[`should render Item with expense 1`] = `
   >
     <Link
       replace={false}
-      to="/expenses/edit/1"
+      to="/expenses/edit/0"
     >
       Gum
     </Link>
   </td>
   <td>
     $32.50
-  </td>
-  <td>
-    Life
   </td>
   <td>
     01/01/1970

@@ -14,10 +14,9 @@ exports[`should render Edit correctly 1`] = `
       expense={
         Object {
           "amount": 3250,
-          "category": "Bank",
           "createAt": 86400000,
           "description": "Credit car",
-          "id": 3,
+          "id": "2",
         }
       }
       onSubmit={[Function]}

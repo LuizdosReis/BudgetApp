@@ -53,27 +53,24 @@ exports[`should render List with expenses 1`] = `
       <tbody>
         <Item
           amount={3250}
-          category="Life"
           createAt={0}
           description="Gum"
-          id={1}
+          id="0"
+          key="0"
+        />
+        <Item
+          amount={3250}
+          createAt={-86400000}
+          description="Rent"
+          id="1"
           key="1"
         />
         <Item
           amount={3250}
-          category="Home"
-          createAt={-86400000}
-          description="Rent"
-          id={2}
-          key="2"
-        />
-        <Item
-          amount={3250}
-          category="Bank"
           createAt={86400000}
           description="Credit car"
-          id={3}
-          key="3"
+          id="2"
+          key="2"
         />
       </tbody>
     </table>

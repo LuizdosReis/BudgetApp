@@ -6,14 +6,13 @@ import numeral from 'numeral';
 import { Link } from 'react-router-dom';
 
 const Item = ({
-  amount, description, category, createAt, id,
+  amount, description, createAt, id,
 }) => (
   <tr>
     <td className="table__element">
       <Link to={`/expenses/edit/${id}`}>{description}</Link>
     </td>
     <td>{numeral(amount / 100).format('$0,0.00')}</td>
-    <td>{category}</td>
     <td>{moment(createAt).format('DD/MM/YYYY')}</td>
   </tr>
 );
@@ -21,9 +20,8 @@ const Item = ({
 Item.propTypes = {
   amount: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
   createAt: PropTypes.number.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Item;

@@ -38,7 +38,6 @@ numeral.register('locale', 'pt-BR', {
 });
 
 numeral.locale('pt-BR');
-
 ReactDOM.render(
   <Provider store={store}>
     <Fragment>
