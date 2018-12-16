@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { edit, remove } from '../../actions/expenses';
+import { startEdit, startRemove } from '../../actions/expenses';
 import Form from './Form';
 import Header from '../../pages/Header';
 
@@ -44,8 +44,8 @@ Edit.propTypes = {
 };
 
 const mapDispatchToProps = dispatch => ({
-  editExpense: (id, expense) => dispatch(edit(id, expense)),
-  removeExpense: data => dispatch(remove(data)),
+  editExpense: (id, expense) => dispatch(startEdit(id, expense)),
+  removeExpense: data => dispatch(startRemove(data)),
 });
 
 const mapStateToProps = (state, props) => ({
