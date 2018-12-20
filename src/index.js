@@ -4,7 +4,9 @@ import { Provider } from 'react-redux';
 import 'react-dates/initialize';
 import numeral from 'numeral';
 import App from './App';
-import './firebase/firebase';
+import { firebase } from './firebase/firebase';
+import { history } from './Routers';
+import { login, logout } from './actions/auth';
 
 import configureStore from './store/configureStore';
 
@@ -38,15 +40,39 @@ numeral.register('locale', 'pt-BR', {
 });
 
 numeral.locale('pt-BR');
-ReactDOM.render(
-  <Provider store={store}>
-    <Fragment>
-      <Reset />
-      <Base />
-      <Colors />
-      <Sizes />
-      <App />
-    </Fragment>
-  </Provider>,
-  document.getElementById('root'),
-);
+
+let hasRendered = false;
+
+const renderApp = () => {
+  if (!hasRendered) {
+    ReactDOM.render(
+      <Provider store={store}>
+        <Fragment>
+          <Reset />
+          <Base />
+          <Colors />
+          <Sizes />
+          <App />
+        </Fragment>
+      </Provider>,
+      document.getElementById('root'),
+    );
+    hasRendered = true;
+  }
+};
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    console.log('login');
+    store.dispatch(login(user.uid));
+    renderApp();
+    if (history.location.pathname === '/') {
+      history.push('/app');
+    }
+  } else {
+    console.log('logout');
+    store.dispatch(logout());
+    renderApp();
+    history.push('/');
+  }
+});

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render SingIn correctly 1`] = `
+<main
+  className="content"
+>
+  <button
+    className="pure-button"
+    onClick={[Function]}
+    type="submit"
+  >
+    Entrar
+  </button>
+</main>
+`;

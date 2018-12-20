@@ -12,39 +12,6 @@ const config = {
 firebase.initializeApp(config);
 
 const database = firebase.database();
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, database as default };
-
-// database.ref('expenses').on('value', (snapshot) => {
-//   const expenses = [];
-
-//   snapshot.forEach((childSnapshot) => {
-//     expenses.push({
-//       id: childSnapshot.key,
-//       ...childSnapshot.val(),
-//     });
-//   });
-
-//   console.log(expenses);
-// });
-
-// database.ref('expenses').push({
-//   description: 'Gum',
-//   category: 'Life',
-//   createAt: 0,
-//   amount: 3250,
-// });
-
-// database.ref('expenses').push({
-//   description: 'Gum',
-//   category: 'Life',
-//   createAt: 0,
-//   amount: 3250,
-// });
-
-// database.ref('expenses').push({
-//   description: 'Gum',
-//   category: 'Life',
-//   createAt: 0,
-//   amount: 3250,
-// });
+export { firebase, googleAuthProvider, database as default };

@@ -68,7 +68,7 @@ export const edit = (id, updates) => ({
 
 export const startEdit = (id, updates) => dispatch => database
   .ref(`expenses/${id}`)
-  .update({ ...updates })
+  .update(updates)
   .then(() => {
     dispatch(edit(id, updates));
   });

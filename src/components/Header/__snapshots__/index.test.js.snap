@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<[object Object]>
+  <[object Object]>
+    Budget
+  </[object Object]>
+  <button
+    onClick={[Function]}
+    type="submit"
+  >
+    Log out
+  </button>
+</[object Object]>
+`;

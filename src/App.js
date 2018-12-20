@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import Routes from './routes';
+import Routers from './Routers';
 
 const App = () => (
   <Fragment>
-    <Routes />
+    <Routers />
   </Fragment>
 );
 
